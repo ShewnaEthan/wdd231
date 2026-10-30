@@ -1,5 +1,9 @@
 * {
     margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 header {
@@ -78,6 +82,7 @@ h2 {
     text-align: center;
     background-color: #3d405b;
     color: white;
+    padding: .2rem;
 }
 
 .content section {
