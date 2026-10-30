@@ -1,5 +1,7 @@
+* {
+    margin: 0;
+}
 
-/*         HEADER         */
 header {
     display: grid;
     grid-template-columns: 24px auto 44px;
@@ -21,7 +23,6 @@ header span {
     color: #3d405b;
 }
 
-/*         HAMBURGER         */
 .hamburger {
     background: none; 
     border: none;
@@ -39,7 +40,6 @@ header span {
     content: "\00d7";
 }
 
-/*         NAVIGATION         */
 .navigation {
     display: none;
 }
@@ -69,16 +69,91 @@ header span {
     background-color: #e07a5f;
 }
 
-
 h1 {
-    margin-left: 10px;
+    margin: .5rem;
     color: #3d405b;
 }
 
+h2 {
+    text-align: center;
+    background-color: #3d405b;
+    color: white;
+}
+
+.content section {
+    background-color: #ddd;
+}
+
+.content section img {
+    display: block;
+    margin: .5rem;
+    justify-self: center;
+}
+
+section {
+    margin: .5rem;
+}
+
+section p {
+    padding: 1rem;
+}
+
+.about-me {
+    min-height: 500px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    padding: .7rem;
+    background-color: #e07a5f;
+    border-radius: .6rem;
+    margin: .5rem;
+    width: 150px;
+}
+
+.course-card-holder {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    text-align: center;
+    background-color: #e07a5f;
+    width: 75%;
+    padding: 1rem;
+    border-radius: .6rem;
+    justify-self: center;
+    margin: .5rem 15%;
+}
+
+.completed {
+    background-color: #e6947e;
+}
+
+.completed::before {
+    content: "✓";
+}
+
+#course-creds {
+    text-align: center;
+}
+
 footer {
+    display: grid;
     background-color: #eee;
     padding: 1rem 10px;
     text-align: center;
+    color: #3d405b;
+}
+
+footer span{
+    padding: .5rem;
 }
 
 .social-icons {
