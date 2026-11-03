@@ -1,0 +1,43 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+#cards {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.card {
+    background-color: #b9b9cc;
+    border: 1px solid #4d4d95;
+    border-radius: .2rem;
+}
+
+img {
+    display: block;
+	width: auto;
+	max-width: 325px;
+	box-shadow: 0 0 30px #777;
+	height: 200px;
+	border: 1px solid #111;
+    justify-self: center;
+    margin: .5rem;
+}
+
+section p {
+	font-size: smaller;
+	text-align: center;
+}
+
+h1, h2 {
+    color: #4d4d95;
+    text-align: center;
+}
+
+footer {
+    color: #4d4d95;
+    text-align: center;
+    margin: 10px;
+    align-items: center;
+}

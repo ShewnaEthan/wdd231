@@ -1,0 +1,23 @@
+{
+    "familyName" : "Garcia",
+    "moveInDate" : "2017-04-16",
+    "numberOfPeople" : 3,
+    "bishopricVisited" : true,
+    "familyMembers" : [
+        {
+            "name" : "Jayden Garcia",
+            "sex" : "Male",
+            "birthday" : "1995-12-12"
+        },
+        {
+            "name" : "Mary Garcia",
+            "sex" : "Female",
+            "birthday" : "1994-02-21"
+        },
+        {
+            "name" : "Hannah Garcia",
+            "sex" : "Female",
+            "birthday" : "2019-08-01"
+        }
+    ]
+}
