@@ -1,14 +1,34 @@
 * {
     margin: 0;
     padding: 0;
+
+    --stl-red: #c60e2d;
+    --stl-yellow: #f4db0e;
+    --stl-blue: #002672;
+    --stl-white: #fefefe;
 }
 
 header {
-    margin: .5rem;
+    padding: .5rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
     align-items: center;
+    background-color: var(--stl-blue);
+    color: var(--stl-white);
+}
+
+header span {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    font-size: large;
+}
+
+.title {
+    /* grid-column: 1/2; */
+    display: grid;
+    grid-template-columns: auto auto 1fr;
 }
 
 .navigation {
@@ -19,12 +39,52 @@ header {
     list-style-type: none;
 }
 
-.navigation ul li a {
-    text-decoration: none;
+.navigation ul li {
+    padding: .5rem;
+    color: var(--stl-white);
 }
 
-.title {
-    grid-column: 1/2;
+.navigation ul li:hover {
+    color: var(--stl-yellow);
+    cursor: pointer;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.navigation ul li a:hover,
+.footer-right a:hover {
+    color: var(--stl-yellow);
+}
+
+.navigation.show {
+    display: block;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--stl-white);
+    width: fit-content;
+    justify-self: end;
+    font-size: larger;
+    padding: .75rem;
+    cursor: pointer;
+    justify-self: end;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show:before {
+    content: "\00d7";
+}
+
+h1 {
+    margin-left: 1rem;
 }
 
 .btn-holder {
@@ -38,7 +98,7 @@ header {
 }
 
 .card-holder {
-    margin: 1rem 1.75rem;
+    margin: 1rem 1.5rem;
 }
 
 .grid {
@@ -49,7 +109,7 @@ header {
 
 .grid .card {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     /* grid-template-columns: auto repeat(4, 1fr); */
     border: solid 1px black;
     border-radius: .3rem;
@@ -60,6 +120,8 @@ header {
     text-align: center;
     padding: .5rem 0;
     border-bottom: 1px solid black;
+    background-color: var(--stl-red);
+    color: var(--stl-white);
 }
 
 .grid .card img {
@@ -68,6 +130,7 @@ header {
     grid-row: 2/6;
     justify-self: center;
     align-self: center;
+    width: 32px;
 }
 
 .grid .card p,
@@ -82,11 +145,73 @@ header {
 
 .list .card {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     text-align: center;
     align-items: center;
-    margin: 1rem 0;
-    border: solid 1px black;
+    border-top: solid 1px black;
+    border-left: solid 1px black;;
+    border-right: solid 1px black;;
     padding: .2rem;
+    min-height: 85px;
 }
 
+.list .card:nth-child(odd) {
+    background-color: #ddd;
+}
+
+.list:last-child {
+    border-bottom: solid 1px black;;
+}
+
+.list .card h2{
+    font-size: medium;
+}
+
+.list .card p,
+.list .card a {
+    font-size: small;
+}
+
+.list .card img {
+    display: block;
+    max-width: 32px;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}
+
+.list .card .membership {
+    display: none;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin-top: 1rem;
+    background-color: var(--stl-blue);
+    padding: 1rem;
+    color: var(--stl-white);
+}
+
+.footer-left p, .footer-right p, .footer-right a{
+    padding: .5rem;
+}
+
+.footer-right a {
+    text-decoration: none;
+    color: var(--stl-white);
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-icons img {
+    display: block;
+    width: 16px;
+    height: 16px;
+    padding: .1rem;
+}

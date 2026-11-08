@@ -1,4 +1,10 @@
 @media only screen and (min-width: 600px) {
+    header {
+        justify-content: space-around;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+    
     .hamburger {
         display: none;
     }
@@ -9,9 +15,13 @@
         display: flex;
         justify-content: space-around;
     }
-
     .grid {
         margin: 1rem 3rem;
+    }
+
+    .grid .card img,
+    .list .card img {
+        width: 50px;
     }
     
 }

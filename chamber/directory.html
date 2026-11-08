@@ -18,15 +18,18 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script defer src="scripts/companies.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/navigation.js"></script>
 </head>
 
 <body>
     <header>
         <div class="title">
-        <img src="images/stlouis-icon.svg" alt="Site Logo" width="64" height="64">
-        <span>Saint Louis Chamber of Commerce</span>
+            <img src="images/stlouis-icon.svg" alt="Site Logo" width="64" height="64">
+            <span>Saint Louis Chamber of Commerce</span>
+            <button id="ham-btn" class="hamburger" aria-label="menu"></button>
         </div>
-        
+
         <nav id="nav-bar" class="navigation">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -35,7 +38,7 @@
                 <li><a href="#">Discover</a></li>
             </ul>
         </nav>
-        <button id="ham-btn" class="hamburger" aria-label="menu"></button>
+        
     </header>
 
     <main>
@@ -48,16 +51,28 @@
         </div>
     </main>
     <footer>
+        <div class="footer-left">
+            <p><strong>St. Louis Chamber of Commerce</strong></p>
+            <p>501 N BROADWAY</p>
+            <p>St. Louis, MO</p>
+            <p>info@stlouiscc.org</p>
+            <p>(314) 222-5555</p>
+        </div>
         <div class="social-icons">
-            <a href="https://www.linkedin.com"><img src="images/linkedin-icon.svg" alt="linkedin icon" width="16"
+            <a href="https://www.linkedin.com"><img src="images/linkedin-icon.svg" alt="linkedin icon" width="64"
                     height="16"></a>
-            <a href="https://www.youtube.com"><img src="images/youtube-icon.svg" alt="youtube icon" width="16"
+            <a href="https://www.youtube.com"><img src="images/youtube-icon.svg" alt="youtube icon" width="64"
                     height="16"></a>
-            <a href="https://www.twitter.com"><img src="images/twitter-icon.svg" alt="twitter icon" width="16"
+            <a href="https://www.twitter.com"><img src="images/twitter-icon.svg" alt="twitter icon" width="64"
                     height="16"></a>
         </div>
-        <span id="current-year">copyright symbol and current year</span>
-        <span id="last-modified">Last modified</span>
+        <div class="footer-right">
+            <p>WDD231 Class Project</p>
+            <p>Ethan Bayer</p>
+            <p id="current-year">copyright symbol and current year</p>
+            <p id="last-modified">Last modified</p>
+            <a href="resources.html">Resources</a>
+        </div>
     </footer>
 </body>
 

@@ -19,7 +19,6 @@ async function getMemberData() {
             throw new Error(`Request failed with status ${response.status}`);
         };
         const data = await response.json();
-        console.log(data.chamberMembers)
         displayMembers(data.chamberMembers);
     }
     catch (error) {
@@ -41,17 +40,16 @@ function displayMembers(members) {
 
         card.classList.add("card");
         company.innerHTML = member.company;
-        address.innerHTML = member.address;
-        phone.innerHTML = member.phone;
-        membershipLVL.innerHTML = member.membership;
+        address.innerHTML = `Address: ${member.address}`;
+        phone.innerHTML = `Phone: ${member.phone}`;
+        membershipLVL.innerHTML = `Membership: ${member.membership}`;
+        membershipLVL.classList.add("membership")
 
         url.innerHTML = "Website";
         url.setAttribute("href", member.url)
 
-        image.setAttribute("loading", "lazy");
         image.setAttribute("src", member.image);
         image.setAttribute("alt", `${member.company}, company logo`)
-        image.setAttribute("width", "64px")
 
         card.appendChild(company);
         card.appendChild(image);

@@ -2,58 +2,58 @@
     "chamberMembers" : [
         {
             "company" : "Fitz",
-            "address" : "6605 Delmar Blvd, St. Louis, MO 63130",
-            "phone" : "(314) 726-9555",
+            "address" : "6605 Delmar Blvd, St. Louis, MO",
+            "phone" : "(314) 726 9555",
             "url" : "https://fitzsrootbeer.com/",
             "image" : "https://fitzsrootbeer.com/wp-content/uploads/2023/05/cropped-fitzs-logos-1-300x261-1.png",
             "membership" : "Gold"
         },
         {
             "company" : "Imo's Pizza",
-            "address" : "800 North 17th Street, St. Louis, MO 63106",
-            "phone" : "(314) 822-0443",
+            "address" : "800 North 17th Street, St. Louis, MO",
+            "phone" : "(314) 822 0443",
             "url" : "https://www.imospizza.com/",
             "image" : "./images/imos-pizza.svg",
             "membership" : "Member"
         },
         {
             "company" : "Chocolate Chocolate Chocolate Company",
-            "address" : "5025 Pattison Ave. St. Louis, MO 63110",
-            "phone" : "1-888-222-7710",
+            "address" : "5025 Pattison Ave. St. Louis, MO",
+            "phone" : "1-888 222 7710",
             "url" : "https://www.chocolatechocolate.com/",
             "image" : "https://www.chocolatechocolate.com/cdn/shop/files/logo_400x@2x.png?v=1630500721",
             "membership" : "Silver"
         },
         {
             "company" : "Pieces",
-            "address" : "2727 S 12th St, St. Louis, MO 63118",
-            "phone" : "(314) 230-5184",
+            "address" : "2727 S 12th St, St. Louis, MO",
+            "phone" : "(314) 230 5184",
             "url" : "https://www.stlpieces.com/",
-            "image" : "https://images.squarespace-cdn.com/content/v1/56ec63ce8259b54cf1f225fd/76276de2-9e0e-4e8a-9e31-fbf908dc6520/Pieces+Door+Logo+Transparent.png?format=1500w",
+            "image" : "./images/pieces-logo.webp",
             "membership" : "Gold"
         },
         {
             "company" : "French Frie Factory",
-            "address" : "2825 N Sarah St, St. Louis, MO 63113",
-            "phone" : "(314) 728-6926",
+            "address" : "2825 N Sarah St, St. Louis, MO",
+            "phone" : "(314) 728 6926",
             "url" : "https://french-frie-factory-1.ueniweb.com/",
-            "image" : "speedy.uenicdn.com/0aa06f03-6d16-4530-bb7a-0fe226541917/n600_128a/image/upload/v1653833857/business/49693ea4131943e48fac6394728a8960.png",
+            "image" : "https://speedy.uenicdn.com/0aa06f03-6d16-4530-bb7a-0fe226541917/n600_128a/image/upload/v1653833857/business/49693ea4131943e48fac6394728a8960.png",
             "membership" : "Silver"
         },
         {
             "company" : "Songbirds",
-            "address" : "3153 Morganford Ave. St. Louis, MO 63116",
-            "phone" : "(314) 781-4344",
+            "address" : "3153 Morganford Ave. St. Louis, MO",
+            "phone" : "(314) 781 4344",
             "url" : "https://songbirdstl.com/",
             "image" : "https://images.squarespace-cdn.com/content/v1/5e8cb91325f93717e1079b8e/1604702351971-271E6O5SGQ8G6TJX9VQT/01_Parent_Logo-Cropped.png?format=1500w",
             "membership" : "Silver"
         },
         {
             "company" : "The Fabulous Fox",
-            "address" : "527 N Grand Blvd, St. Louis, MO 63103",
-            "phone" : "(314) 534-1678",
+            "address" : "527 N Grand Blvd, St. Louis, MO",
+            "phone" : "(314) 534 1678",
             "url" : "https://www.fabulousfox.com/",
-            "image" : "fabulousfox.com/assets/img/FabulousFoxStLouis-500px-Black-5512970fa3.png",
+            "image" : "https://fabulousfox.com/assets/img/FabulousFoxStLouis-500px-Black-5512970fa3.png",
             "membership" : "Member"
         }
     ]
