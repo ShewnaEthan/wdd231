@@ -39,7 +39,7 @@ function displayMembers(members) {
         let url = document.createElement("a")
 
         card.classList.add("card");
-        company.innerHTML = member.company;
+        company.innerHTML = `<strong>${member.company}</strong>`;
         address.innerHTML = `Address: ${member.address}`;
         phone.innerHTML = `Phone: ${member.phone}`;
         membershipLVL.innerHTML = `Membership: ${member.membership}`;
