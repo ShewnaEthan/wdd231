@@ -1,11 +1,11 @@
 {
     "chamberMembers" : [
         {
-            "company" : "Fitz",
+            "company" : "Fitz's",
             "address" : "6605 Delmar Blvd, St. Louis, MO",
             "phone" : "(314) 726 9555",
             "url" : "https://fitzsrootbeer.com/",
-            "image" : "https://fitzsrootbeer.com/wp-content/uploads/2023/05/cropped-fitzs-logos-1-300x261-1.png",
+            "image" : "./images/fitzs-logo.png",
             "membership" : "Gold"
         },
         {
@@ -21,7 +21,7 @@
             "address" : "5025 Pattison Ave. St. Louis, MO",
             "phone" : "1-888 222 7710",
             "url" : "https://www.chocolatechocolate.com/",
-            "image" : "https://www.chocolatechocolate.com/cdn/shop/files/logo_400x@2x.png?v=1630500721",
+            "image" : "./images/chocolate-logo.png",
             "membership" : "Silver"
         },
         {
@@ -37,15 +37,15 @@
             "address" : "2825 N Sarah St, St. Louis, MO",
             "phone" : "(314) 728 6926",
             "url" : "https://french-frie-factory-1.ueniweb.com/",
-            "image" : "https://speedy.uenicdn.com/0aa06f03-6d16-4530-bb7a-0fe226541917/n600_128a/image/upload/v1653833857/business/49693ea4131943e48fac6394728a8960.png",
+            "image" : "./images/frie-factory-logo.png",
             "membership" : "Silver"
         },
         {
-            "company" : "Songbirds",
+            "company" : "Songbird",
             "address" : "3153 Morganford Ave. St. Louis, MO",
             "phone" : "(314) 781 4344",
             "url" : "https://songbirdstl.com/",
-            "image" : "https://images.squarespace-cdn.com/content/v1/5e8cb91325f93717e1079b8e/1604702351971-271E6O5SGQ8G6TJX9VQT/01_Parent_Logo-Cropped.png?format=1500w",
+            "image" : "./images/songbird-logo.webp",
             "membership" : "Silver"
         },
         {
@@ -53,7 +53,7 @@
             "address" : "527 N Grand Blvd, St. Louis, MO",
             "phone" : "(314) 534 1678",
             "url" : "https://www.fabulousfox.com/",
-            "image" : "https://fabulousfox.com/assets/img/FabulousFoxStLouis-500px-Black-5512970fa3.png",
+            "image" : "./images/fabulous-fox-logo.webp",
             "membership" : "Member"
         }
     ]

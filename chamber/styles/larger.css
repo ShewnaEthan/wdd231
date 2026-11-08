@@ -1,4 +1,8 @@
 @media only screen and (min-width: 600px) {
+    * {
+        font-size: medium;
+    }
+    
     header {
         justify-content: space-around;
         align-items: center;
@@ -21,7 +25,7 @@
 
     .grid .card img,
     .list .card img {
-        width: 50px;
+        max-width: 50px;
     }
     
 }

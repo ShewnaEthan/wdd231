@@ -6,6 +6,12 @@
     --stl-yellow: #f4db0e;
     --stl-blue: #002672;
     --stl-white: #fefefe;
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: small;
 }
 
 header {
@@ -72,7 +78,6 @@ header span {
     font-size: larger;
     padding: .75rem;
     cursor: pointer;
-    justify-self: end;
 }
 
 .hamburger::before {
@@ -98,7 +103,7 @@ h1 {
 }
 
 .card-holder {
-    margin: 1rem 1.5rem;
+    margin: 1rem 1rem;
 }
 
 .grid {
@@ -130,7 +135,7 @@ h1 {
     grid-row: 2/6;
     justify-self: center;
     align-self: center;
-    width: 32px;
+    max-width: 32px;
 }
 
 .grid .card p,
@@ -163,9 +168,6 @@ h1 {
     border-bottom: solid 1px black;;
 }
 
-.list .card h2{
-    font-size: medium;
-}
 
 .list .card p,
 .list .card a {
