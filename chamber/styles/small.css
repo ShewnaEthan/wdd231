@@ -134,6 +134,15 @@ h1 {
     color: var(--stl-white);
 }
 
+.grid .card h3 {
+    grid-column: 1/3;
+    text-align: center;
+    padding: .5rem .1rem;
+    border-bottom: 1px solid black;
+    background-color: var(--stl-red);   
+    color: var(--stl-white);
+}
+
 .grid .card img {
     display: block;
     grid-column: 1/2;
