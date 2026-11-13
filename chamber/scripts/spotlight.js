@@ -7,7 +7,6 @@ async function getMemberData() {
             throw new Error(`Request failed with status ${response.status}`);
         };
         const data = await response.json();
-        console.log(data); 
         displayRandomMembers(data.chamberMembers, Math.random() * (3 - 1) + 1)
     }
     catch (error) {
@@ -34,7 +33,14 @@ function displayRandomMembers(data, numToDisplay) {
         address.innerHTML = `Address: ${filiteredMembers[diplayIndex].address}`;
         phone.innerHTML = `Phone: ${filiteredMembers[diplayIndex].phone}`;
         membershipLVL.innerHTML = `Membership: ${filiteredMembers[diplayIndex].membership}`;
-        membershipLVL.classList.add("membership")
+        membershipLVL.classList.add("membership");
+
+        company.classList.add("grid-item");
+        address.classList.add("grid-item");
+        phone.classList.add("grid-item");
+        membershipLVL.classList.add("grid-item");
+        url.classList.add("grid-item");
+        image.classList.add("grid-item");
 
         url.innerHTML = "Website";
         url.setAttribute("href", filiteredMembers[diplayIndex].url)

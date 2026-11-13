@@ -24,6 +24,7 @@
     <script defer src="scripts/getdates.js"></script>
     <script defer src="scripts/navigation.js"></script>
     <script defer src="scripts/spotlight.js"></script>
+    <script defer src="scripts/weather.js"></script>
 </head>
 
 <body>
@@ -48,17 +49,42 @@
     <main>
         <h1>Home Page</h1>
         <div class="hero">
-            <img alt="Hero image of saint louis">
-        <h2>Call to action</h2>
-        <p>call description</p>
-        <a></a>
+            <img alt=" Hero image of saint louis" src="images/hero-large.jpg">
+            <div class="call">
+                <h2><strong>Welcome To Saint Louis!</strong></h2>
+                <a href="#"><strong>Join The Community</strong></a>
+            </div>
+            <a></a>
         </div>
-        <h2>Current Events</h2>
-        <div id="weather"></div>
-        <h2>Company Spotlight</h2>
-        <div id="spotlight" class="card-holder grid">    
+        <div class="current-events">
+            <h2><strong>Current and Upcoming Events</strong></h2>
+            <div class="event-1">
+                <h3><strong>Fall Fair</strong></h3>
+                <p>Join us for this years fall fair! Enjoy fall foods, playing carnival games, supporting local busniesses and more!</p>
+                <p>When: November 7th-21st 2026</p>
+                <p>Where: 701 Convention Plaza</p>
+            </div>
+            <div class="event-2">
+                <h3><strong>Thanksgiving Football Game</strong></h3>
+                <p>Watch your favorite local teams compete for charity in this years Thanksgiving football game. A portion of All proceddings will be donated to Saint Judes Children Hospistal</p>
+                <p>When: November 26th 2026</p>
+                <p>Where: 701 Convention Plaza</p>
+            </div>
+            </div>
         </div>
-
+        <div id="weather">
+            <h2><strong>Weather</strong></h2>
+            <img id="weather-icon" src="" alt="">
+            <p id="description"></p>
+            <p id="temperature"></p>
+            <p><strong>Forecast</strong></p>
+            <p id="dayone"></p>
+            <p id="daytwo"></p>
+            <p id="daythree"></p>
+        </div>
+        <h2><strong>Company Spotlight</strong></h2>
+        <div id="spotlight" class="card-holder grid">
+        </div>
     </main>
     <footer>
         <div class="footer-left">

@@ -43,7 +43,14 @@ function displayMembers(members) {
         address.innerHTML = `Address: ${member.address}`;
         phone.innerHTML = `Phone: ${member.phone}`;
         membershipLVL.innerHTML = `Membership: ${member.membership}`;
-        membershipLVL.classList.add("membership")
+        membershipLVL.classList.add("membership");
+
+        company.classList.add("grid-item");
+        address.classList.add("grid-item");
+        phone.classList.add("grid-item");
+        membershipLVL.classList.add("grid-item");
+        url.classList.add("grid-item");
+        image.classList.add("grid-item");
 
         url.innerHTML = "Website";
         url.setAttribute("href", member.url)

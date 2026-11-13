@@ -1,8 +1,4 @@
-@media only screen and (min-width: 600px) {
-    * {
-        font-size: medium;
-    }
-    
+@media only screen and (min-width: 600px) {   
     header {
         justify-content: space-around;
         align-items: center;
@@ -27,5 +23,8 @@
     .list .card img {
         max-width: 50px;
     }
-    
+    /* .grid .card h2,
+    .grid .card h3 {
+        height: 60px;
+    } */
 }
