@@ -95,6 +95,7 @@ header span {
 h1,
 h2 {
     text-align: center;
+    margin: 2rem;
 }
 
 .hero {
@@ -249,22 +250,27 @@ h2 {
     display: none;
 }
 
+.local {
+    display: grid;
+    grid-template-columns: 3fr auto;
+    margin: 1.5rem;
+}
+
 .current-events {
     justify-content: center;
     align-items: center;
-    margin: 1rem;
 }
 
-.current-events h2{
+.current-events h2 {
     margin: .5rem;
-    
+
 }
 
 #weather {
     display: grid;
     max-width: fit-content;
-    margin: 1rem auto;
     border: var(--bord);
+    border-left: none;
     padding: 1rem;
 }
 
@@ -278,6 +284,10 @@ h2 {
     padding: .2rem;
 }
 
+#weather h3 {
+    text-align: center;
+}
+
 .event-1,
 .event-2 {
     display: flex;
@@ -285,6 +295,7 @@ h2 {
     justify-content: space-around;
     min-height: 100px;
     text-align: center;
+    padding: .5rem;
 }
 
 .event-1 {
