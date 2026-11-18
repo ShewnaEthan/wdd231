@@ -86,16 +86,20 @@ createCards(courses);
 function createCards(cardList) {
     let totalCreds = 0
     cardList.forEach(course => {
-        let title = document.createElement("p");
+        let title = document.createElement("button");
 
         if (course.completed) {
             title.classList.add("completed");
         };
         title.classList.add("card")
         title.innerHTML = `${course.subject} ${course.number}`
+        title.addEventListener("click", () => {
+            displayCourseDetails(course);
+        })
         totalCreds += course.credits;
 
         cardHolder.appendChild(title);
+
     });
     courseCreds.innerHTML = `The total amount of credits for the shown courses is ${totalCreds}.`
 };
@@ -117,4 +121,28 @@ showCseBtn.addEventListener("click", () => {
 showWddBtn.addEventListener("click", () => {
     cardHolder.innerHTML = ""
     createCards(courses.filter(course => (course.subject == 'WDD')))     
+});
+
+const courseDetails = document.querySelector("#course-details");
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Description</strong>: ${course.description}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p><strong>Technology</strong>: ${course.technology.join(", ")}</p>
+    `
+    courseDetails.showModal();
+
+    courseDetails.querySelector("#closeModal").addEventListener("click", () => {
+        courseDetails.close();
+    })
+}
+
+courseDetails.addEventListener('click', (event) => {
+  if (event.target === courseDetails) {
+    courseDetails.close();
+  }
 });

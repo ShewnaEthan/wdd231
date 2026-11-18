@@ -118,6 +118,7 @@ section p {
     border-radius: .6rem;
     margin: .5rem;
     width: 150px;
+    cursor: pointer;
 }
 
 .course-card-holder {
@@ -135,6 +136,7 @@ section p {
     border-radius: .6rem;
     justify-self: center;
     margin: .5rem 15%;
+    cursor: pointer;
 }
 
 .completed {
@@ -182,4 +184,37 @@ footer span{
 .social-icons image{
     width: 22px;
     height: 22px;
+}
+
+dialog {
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-radius: .25rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 3rem #777;
+  width: 90%;
+  max-width: 600px;
+  justify-self: center;
+  align-self: center;
+}
+
+dialog p {
+    margin: .3rem;
+}
+
+dialog h3 {
+    text-align: center;
+    margin: .3rem;
+}
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  padding: .5rem 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
 }
