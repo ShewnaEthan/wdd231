@@ -48,50 +48,57 @@
         <h1>Join The Community</h1>
         <div class="join-container">
             <form method="GET" action="thankyou.html">
-
-                <label id="firstname" for="firstname">First Name<input type="text" name="firstname"
-                        autocomplete="given-name" required></label>
-                <label id="lastname" for="lastname">Last Name<input type="text" name="lastname"
-                        autocomplete="family-name" required></label>
-                <label id="phonenumber" for="phonenumber">Mobile Phone Number<input type="tel" name="phonenumber"
-                        autocomplete="tel" required></label>
-
-                <label id="organization-title" for="organization-title">Organization Title<input type="text"
-                        name="organization-title" autocomplete="organization-title"></label>
-                <label id="email" for="email">Email<input type="email" name="email" autocomplete="email"
-                        required></label>
-                <label id="organization-name" for="organization-name">Organization<input type="text"
-                        name="organization-name" autocomplete="organization" required></label>
-                <label>
-                    Membership Level
-                    <label><input type="radio" value="NP">Non-profit Membership</label>
-                    <label><input type="radio" value="bronze">Bronze Membership</label>
-                    <label><input type="radio" value="silver">Silver Membership</label>
-                    <label><input type="radio" value="gold">Gold Membership</label>
-                </label>
-                <label id="description" for="description">Description: <textarea name="description"></textarea></label>
-                <input type="hidden" name="timestamp" id="timestamp">
-                <label>Join<input type="submit"></label>
+                <fieldset class="join-field personal">
+                    <legend>Personal Inforamtion</legend>
+                    <label for="firstname">First Name:<input type="text" id="firstname" name="firstname"
+                            autocomplete="given-name" required></label>
+                    <label for="lastname">Last Name:<input type="text" id="lastname" name="lastname"
+                            autocomplete="family-name" required></label>
+                    <label for="phonenumber">Mobile Phone Number:<input type="tel" id="phonenumber" name="phonenumber"
+                            autocomplete="tel" required></label>
+                    <label for="organization-title">Organizational Title:<input type="text" id="organization-title"
+                            name="organization-title" autocomplete="organization-title"></label>
+                    <label for="email">Email<input type="email" id="email" name="email" autocomplete="email"
+                            required></label>
+                </fieldset>
+                <fieldset class="join-field organization">
+                    <legend>Busniess Inforamtion</legend>
+                    <label for="organization-name">Organization:<input type="text" id="organization-name"
+                            name="organization-name" autocomplete="organization" required></label>
+                    <div>Membership Level:</div>
+                        <label for="NP"><input type="radio" id="NP" value="NP" name="level"> Non-profit
+                            Membership</label>
+                        <label for="bronze"><input type="radio" id="bronze" value="bronze" name="level"> Bronze
+                            Membership</label>
+                        <label for="silver"><input type="radio" id="silver" value="silver" name="level"> Silver
+                            Membership</label>
+                        <label for="gold"><input type="radio" id="gold" value="gold" name="level"> Gold
+                            Membership</label>
+                    <label for="description">Description: <textarea name="description"
+                            id="description"></textarea></label>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </fieldset>
+                <input type="submit" value="Join The Community">
 
             </form>
             <div class="membership-holder">
                 <div class="membership-card">
-                    <h2>Non-Profit</h2>
+                    <h2><strong>Non-Profit</strong></h2>
                     <p>Learn More</p>
                     <dialog><button class="closeModal">X</button></dialog>
                 </div>
                 <div class="membership-card">
-                    <h2>Bronze</h2>
+                    <h2><strong>Bronze</strong></h2>
                     <p>Learn More</p>
                     <dialog><button class="closeModal">X</button></dialog>
                 </div>
                 <div class="membership-card">
-                    <h2>Silver</h2>
+                    <h2><strong>Silver</strong></h2>
                     <p>Learn More</p>
                     <dialog><button class="closeModal">X</button></dialog>
                 </div>
                 <div class="membership-card">
-                    <h2>Gold</h2>
+                    <h2><strong>Gold</strong></h2>
                     <p>Learn More</p>
                     <dialog><button class="closeModal">X</button></dialog>
                 </div>

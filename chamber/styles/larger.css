@@ -28,6 +28,6 @@
     }
 
     .join-container {
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 300px 300px;
     }
 }

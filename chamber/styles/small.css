@@ -316,11 +316,80 @@ h2 {
 .join-container {
     display: grid;
     margin: auto;
+    justify-self: center;
+    justify-content: space-around;
 }
 
 .join-container form {
+    margin: 1rem auto;
+    justify-content: center;
+}
+
+.join-field {
     display: grid;
-    margin: 1rem;
+    appearance: none;
+    padding: 1rem;
+    margin: .5rem;
+    border-radius: .5rem;
+    min-width: 200px;
+}
+
+.join-field legend {
+    padding: .5rem;
+}
+
+.join-field input[type="text"],
+.join-field input[type="tel"],
+.join-field input[type="email"],
+.join-field textarea {
+    display: block;
+    padding: .5rem;
+    margin-top: .2rem;
+    border-radius: .3rem;
+    border: var(--bord);
+}
+
+.join-field textarea {
+    max-width: 200px;
+}
+
+.join-field input:required {
+    border-left: 5px solid darkgoldenrod;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.join-field input:required:valid {
+    border-left: 5px solid var(--stl-blue);
+}
+
+.join-field input[type="radio"] {
+    display: inline;
+    padding: .5rem;
+    margin-top: .2rem;
+}
+
+.join-field label{
+    padding-top: 1rem;
+}
+
+.join-field div{
+    margin-top: 1rem;
+    margin-bottom: -.8rem;
+}
+
+.join-container input[type="submit"] {
+    display: block;
+    padding: .5rem;
+    background-color: var(--stl-red);
+    color: var(--stl-white);
+    border: var(--bord);
+    border-radius: .3rem;
+    margin: auto;
+}
+
+.join-container input[type="submit"]:hover {
+    background-color: var(--stl-blue);
+    box-shadow: 2px 2px 10px black;
 }
 
 .membership-holder {
@@ -330,11 +399,15 @@ h2 {
 }
 
 .membership-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     border: var(--bord);
     margin: 1rem;
     border-radius: .8rem;
     border-top-left-radius: 0rem;
     background-color: lightsteelblue;
+    min-height: 150px;
 }
 
 .membership-card h2 {
@@ -344,6 +417,12 @@ h2 {
 .membership-card p {
     text-align: center;
     padding: .5rem;
+    margin: auto;
+    border: var(--bord);
+    border-radius: .6rem;
+    width: fit-content;
+    background-color: var(--stl-blue);
+    color: var(--stl-white);
 }
 
 footer {
@@ -380,7 +459,7 @@ footer {
     padding: .1rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 599.9px) {
     * {
         font-size: .9rem;
     }
