@@ -1,20 +1,23 @@
-@media only screen and (min-width: 600px) {   
+@media only screen and (min-width: 600px) {
     header {
         justify-content: space-around;
         align-items: center;
         grid-template-columns: 1fr 1fr;
     }
-    
+
     .hamburger {
         display: none;
     }
+
     .navigation {
         display: block;
     }
+
     .navigation ul {
         display: flex;
         justify-content: space-around;
     }
+
     .grid {
         margin: 1rem 3rem;
     }
@@ -23,8 +26,8 @@
     .list .card img {
         max-width: 50px;
     }
-    /* .grid .card h2,
-    .grid .card h3 {
-        height: 60px;
-    } */
+
+    .join-container {
+        grid-template-columns: 2fr 1fr;
+    }
 }
