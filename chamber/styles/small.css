@@ -398,6 +398,23 @@ h2 {
     align-items: center;
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        scale: 0;
+        transform: translate(200px, 150px);
+    }
+    80%{
+        transform: translatey(-20px);
+        opacity: 1;
+        scale: 1;
+    }
+
+    90% {
+        transform: translatey(-20px);
+    }
+}
+
 .membership-card {
     display: flex;
     flex-direction: column;
@@ -408,6 +425,7 @@ h2 {
     border-top-left-radius: 0rem;
     background-color: lightsteelblue;
     min-height: 150px;
+    animation: fadeIn .75s ease-in;
 }
 
 .membership-card h2 {
@@ -427,7 +445,9 @@ h2 {
 
 #membership-details {
     padding: 1rem;
-    margin: auto;
+    justify-self: center;
+    align-self: center;
+    margin: 1rem;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
     border-radius: .3rem;
 }
