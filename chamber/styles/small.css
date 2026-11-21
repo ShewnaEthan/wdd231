@@ -368,11 +368,11 @@ h2 {
     margin-top: .2rem;
 }
 
-.join-field label{
+.join-field label {
     padding-top: 1rem;
 }
 
-.join-field div{
+.join-field div {
     margin-top: 1rem;
     margin-bottom: -.8rem;
 }
@@ -423,6 +423,35 @@ h2 {
     width: fit-content;
     background-color: var(--stl-blue);
     color: var(--stl-white);
+}
+
+#membership-details {
+    padding: 1rem;
+    margin: auto;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+    border-radius: .3rem;
+}
+
+#membership-details h3,
+#membership-details p{
+    margin: 1rem;
+}
+
+.benifits {
+    margin: 1.5rem;
+}
+
+#results {
+    margin: auto;
+    border: var(--bord);
+    max-width: fit-content;
+    padding: 1rem;
+    border-radius: .3rem;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+#results p {
+    padding: .5rem;
 }
 
 footer {

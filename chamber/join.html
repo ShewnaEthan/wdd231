@@ -21,6 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <script defer src="scripts/form.js"></script>
     <script defer src="scripts/getdates.js"></script>
     <script defer src="scripts/navigation.js"></script>
 </head>
@@ -51,30 +52,30 @@
                 <fieldset class="join-field personal">
                     <legend>Personal Inforamtion</legend>
                     <label for="firstname">First Name:<input type="text" id="firstname" name="firstname"
-                            autocomplete="given-name" required></label>
+                            autocomplete="given-name" placeholder="Jane" required></label>
                     <label for="lastname">Last Name:<input type="text" id="lastname" name="lastname"
-                            autocomplete="family-name" required></label>
+                            autocomplete="family-name" placeholder="Doe" required></label>
                     <label for="phonenumber">Mobile Phone Number:<input type="tel" id="phonenumber" name="phonenumber"
-                            autocomplete="tel" required></label>
+                            autocomplete="tel" placeholder="(123) 456-7890" required></label>
                     <label for="organization-title">Organizational Title:<input type="text" id="organization-title"
-                            name="organization-title" autocomplete="organization-title"></label>
-                    <label for="email">Email<input type="email" id="email" name="email" autocomplete="email"
+                            name="organization-title" autocomplete="organization-title" placeholder="Product Manager"></label>
+                    <label for="email">Email<input type="email" id="email" name="email" autocomplete="email" placeholder="example@stlchamber.com"
                             required></label>
                 </fieldset>
                 <fieldset class="join-field organization">
                     <legend>Busniess Inforamtion</legend>
-                    <label for="organization-name">Organization:<input type="text" id="organization-name"
+                    <label for="organization-name">Organization:<input type="text" id="organization-name" placeholder="Company Name"
                             name="organization-name" autocomplete="organization" required></label>
                     <div>Membership Level:</div>
-                        <label for="NP"><input type="radio" id="NP" value="NP" name="level"> Non-profit
+                        <label for="NP"><input type="radio" id="NP" value="NP" name="level" required> Non-profit
                             Membership</label>
-                        <label for="bronze"><input type="radio" id="bronze" value="bronze" name="level"> Bronze
+                        <label for="bronze"><input type="radio" id="bronze" value="bronze" name="level" required> Bronze
                             Membership</label>
-                        <label for="silver"><input type="radio" id="silver" value="silver" name="level"> Silver
+                        <label for="silver"><input type="radio" id="silver" value="silver" name="level" required> Silver
                             Membership</label>
-                        <label for="gold"><input type="radio" id="gold" value="gold" name="level"> Gold
+                        <label for="gold"><input type="radio" id="gold" value="gold" name="level" required> Gold
                             Membership</label>
-                    <label for="description">Description: <textarea name="description"
+                    <label for="description">Description: <textarea name="description" placeholder="Here at Company we..."
                             id="description"></textarea></label>
                     <input type="hidden" name="timestamp" id="timestamp">
                 </fieldset>
@@ -82,27 +83,8 @@
 
             </form>
             <div class="membership-holder">
-                <div class="membership-card">
-                    <h2><strong>Non-Profit</strong></h2>
-                    <p>Learn More</p>
-                    <dialog><button class="closeModal">X</button></dialog>
-                </div>
-                <div class="membership-card">
-                    <h2><strong>Bronze</strong></h2>
-                    <p>Learn More</p>
-                    <dialog><button class="closeModal">X</button></dialog>
-                </div>
-                <div class="membership-card">
-                    <h2><strong>Silver</strong></h2>
-                    <p>Learn More</p>
-                    <dialog><button class="closeModal">X</button></dialog>
-                </div>
-                <div class="membership-card">
-                    <h2><strong>Gold</strong></h2>
-                    <p>Learn More</p>
-                    <dialog><button class="closeModal">X</button></dialog>
-                </div>
             </div>
+            <dialog id="membership-details"><button class="closeModal">X</button></dialog>
         </div>
     </main>
     <footer>
