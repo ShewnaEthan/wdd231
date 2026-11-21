@@ -51,32 +51,34 @@
             <form method="GET" action="thankyou.html">
                 <fieldset class="join-field personal">
                     <legend>Personal Inforamtion</legend>
-                    <label for="firstname">First Name:<input type="text" id="firstname" name="firstname"
-                            autocomplete="given-name" placeholder="Jane" required></label>
-                    <label for="lastname">Last Name:<input type="text" id="lastname" name="lastname"
-                            autocomplete="family-name" placeholder="Doe" required></label>
-                    <label for="phonenumber">Mobile Phone Number:<input type="tel" id="phonenumber" name="phonenumber"
-                            autocomplete="tel" placeholder="(123) 456-7890" required></label>
+                    <label for="firstname">First Name *<input type="text" id="firstname" name="firstname"
+                            autocomplete="given-name" placeholder="Jane" title="firstname" required></label>
+                    <label for="lastname">Last Name *<input type="text" id="lastname" name="lastname"
+                            autocomplete="family-name" placeholder="Doe" title="lastname" required></label>
+                    <label for="phonenumber">Mobile Phone Number *<input type="tel" id="phonenumber" name="phonenumber"
+                            autocomplete="tel" placeholder="(123) 456-7890" title="phonenumber" required></label>
                     <label for="organization-title">Organizational Title:<input type="text" id="organization-title"
-                            name="organization-title" autocomplete="organization-title" placeholder="Product Manager"></label>
-                    <label for="email">Email<input type="email" id="email" name="email" autocomplete="email" placeholder="example@stlchamber.com"
-                            required></label>
+                            name="organization-title" autocomplete="organization-title" placeholder="Product Manager"
+                            title="Must be atleast 7 characters, only a-z, A-Z, spaces and hypens are allowed" pattern="[a-zA-Z\s\-]{7,}"></label>
+                    <label for="email">Email *<input type="email" id="email" name="email" autocomplete="email"
+                            placeholder="example@stlchamber.com" title="email" required></label>
                 </fieldset>
                 <fieldset class="join-field organization">
                     <legend>Busniess Inforamtion</legend>
-                    <label for="organization-name">Organization:<input type="text" id="organization-name" placeholder="Company Name"
-                            name="organization-name" autocomplete="organization" required></label>
-                    <div>Membership Level:</div>
-                        <label for="NP"><input type="radio" id="NP" value="NP" name="level" required> Non-profit
-                            Membership</label>
-                        <label for="bronze"><input type="radio" id="bronze" value="bronze" name="level" required> Bronze
-                            Membership</label>
-                        <label for="silver"><input type="radio" id="silver" value="silver" name="level" required> Silver
-                            Membership</label>
-                        <label for="gold"><input type="radio" id="gold" value="gold" name="level" required> Gold
-                            Membership</label>
-                    <label for="description">Description: <textarea name="description" placeholder="Here at Company we..."
-                            id="description"></textarea></label>
+                    <label for="organization-name">Organization:<input type="text" id="organization-name"
+                            placeholder="Company Name" name="organization-name" autocomplete="organization"
+                            title="organization-name" required></label>
+                    <div>Membership Level *</div>
+                    <label for="NP"><input type="radio" id="NP" value="NP" name="level" required> Non-profit
+                        Membership</label>
+                    <label for="bronze"><input type="radio" id="bronze" value="bronze" name="level" required> Bronze
+                        Membership</label>
+                    <label for="silver"><input type="radio" id="silver" value="silver" name="level" required> Silver
+                        Membership</label>
+                    <label for="gold"><input type="radio" id="gold" value="gold" name="level" required> Gold
+                        Membership</label>
+                    <label for="description">Description<textarea name="description"
+                            placeholder="Here at Company we..." id="description" title="description"></textarea></label>
                     <input type="hidden" name="timestamp" id="timestamp">
                 </fieldset>
                 <input type="submit" value="Join The Community">

@@ -425,7 +425,7 @@ h2 {
     border-top-left-radius: 0rem;
     background-color: lightsteelblue;
     min-height: 150px;
-    animation: fadeIn .75s ease-in;
+    animation: fadeIn 1s ease-in;
 }
 
 .membership-card h2 {
