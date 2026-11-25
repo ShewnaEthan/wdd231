@@ -12,6 +12,8 @@
     --light-gold: #e0d68a;
     --tuscan-sun: #f9cb40;
     --mint-cream: #f0f7f4;
+
+    color: var(--carbon-black);
 }
 
 i {
@@ -23,9 +25,10 @@ h2 {
 }
 
 li span {
-    padding: .5rem;
+    padding: .2rem;
     border-radius: .5rem;
     border: solid black 3px;
+    margin: .2rem;
 }
 
 li {
