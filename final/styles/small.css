@@ -1,0 +1,61 @@
+* {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin: 1.5rem 1rem;
+
+    /* Colors :O */
+    --carbon-black: #1e2019;
+    --baltic-blue: #456990;
+    --ruby-red: #a6192e;
+    --light-gold: #e0d68a;
+    --tuscan-sun: #f9cb40;
+    --mint-cream: #f0f7f4;
+}
+
+i {
+    font-style: italic;
+}
+
+h2 {
+    margin-top: 3rem;
+}
+
+li span {
+    padding: .5rem;
+    border-radius: .5rem;
+    border: solid black 3px;
+}
+
+li {
+    margin: 2rem;
+}
+
+.carbon-black {
+    background-color: var(--carbon-black);
+    color: var(--mint-cream);
+    border: solid var(--tuscan-sun) 3px;
+}
+
+.baltic-blue {
+    background-color: var(--baltic-blue);
+    color: var(--mint-cream);
+}
+
+.ruby-red {
+    background-color: var(--ruby-red);
+    color: var(--mint-cream);
+}
+
+.light-gold {
+    background-color: var(--light-gold);
+}
+
+.tuscan-sun {
+    background-color: var(--tuscan-sun);
+}
+
+.mint-cream {
+    background-color: var(--mint-cream);
+}
