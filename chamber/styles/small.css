@@ -476,6 +476,10 @@ h2 {
     padding: .5rem;
 }
 
+#welcome {
+    justify-self: center;
+}
+
 .discover-card {
     margin: 1rem;
     border: var(--bord);

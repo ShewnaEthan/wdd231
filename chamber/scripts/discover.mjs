@@ -9,7 +9,7 @@ locations.forEach(location => {
     let image = document.createElement("img")
     let address = document.createElement("address")
     let description = document.createElement("p")
-    let button =  document.createElement("button")
+    let button = document.createElement("button")
 
     card.classList.add("discover-card")
     info.classList.add("info")
@@ -34,3 +34,36 @@ locations.forEach(location => {
     cardHolder.appendChild(card)
 });
 
+const welcome = document.querySelector("#welcome")
+const today = Date.now()
+const theDateToday = new Date()
+const msToDays = 86400000;
+
+let lastVisit = getLastVisit() || 0
+
+let daysSinceLastVisit = ((today - lastVisit) / msToDays).toFixed(0)
+
+// daysSinceLastVisit = 9
+
+if (lastVisit == 0) {
+    welcome.innerHTML = "Welcome! Let us know if you have any questions."
+}
+else if (daysSinceLastVisit < 1) {
+    welcome.innerHTML = "Back so soon! Awesome!"
+}
+else {
+    welcome.innerHTML = `You last visited ${daysSinceLastVisit} days ago`
+}
+
+
+console.log(theDateToday)
+setLastVisit()
+
+
+function setLastVisit() {
+    localStorage.setItem("ls-last-visit", today)
+}
+
+function getLastVisit() {
+    return localStorage.getItem("ls-last-visit")
+}
