@@ -174,6 +174,7 @@ h2 {
     border: var(--bord);
     border-radius: .3rem;
     min-height: 300px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .grid .card h2,
@@ -404,7 +405,8 @@ h2 {
         scale: 0;
         transform: translate(200px, 150px);
     }
-    80%{
+
+    80% {
         transform: translatey(-20px);
         opacity: 1;
         scale: 1;
@@ -453,7 +455,7 @@ h2 {
 }
 
 #membership-details h3,
-#membership-details p{
+#membership-details p {
     margin: 1rem;
 }
 
@@ -472,6 +474,57 @@ h2 {
 
 #results p {
     padding: .5rem;
+}
+
+.discover-card {
+    margin: 1rem;
+    border: var(--bord);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+    border-radius: .3rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas:
+        "title"
+        "figure"
+        "description"
+        "address"
+        "button";
+}
+
+.discover-card p {
+    margin: .5rem;
+    grid-area: description;
+}
+
+.discover-card address {
+    margin: .5rem;
+    grid-area: address;
+}
+
+.discover-card h2 {
+    margin: 1rem 10px;
+    grid-area: title;
+}
+
+.discover-card figure {
+    grid-area: figure;
+}
+
+.discover-card button {
+    grid-area: button;
+    max-width: fit-content;
+    padding: .5rem;
+    margin: .5rem;
+    justify-self: center;
+    border: var(--bord);
+    border-radius: .5rem;
+    background-color: var(--stl-yellow);
+    cursor: pointer;
+}
+
+.discover-card button:hover {
+    background-color: var(--stl-red);
+    color: var(--stl-white);
 }
 
 footer {
@@ -511,5 +564,8 @@ footer {
 @media only screen and (max-width: 599.9px) {
     * {
         font-size: .9rem;
+    }
+    h1,h2 {
+        font-weight: bold;
     }
 }
