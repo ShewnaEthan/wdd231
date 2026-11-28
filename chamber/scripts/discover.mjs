@@ -3,6 +3,7 @@ const cardHolder = document.querySelector("#discover-card-holder")
 
 locations.forEach(location => {
     let card = document.createElement("div")
+    let info = document.createElement("div")
     let title = document.createElement("h2")
     let figure = document.createElement("figure")
     let image = document.createElement("img")
@@ -11,6 +12,7 @@ locations.forEach(location => {
     let button =  document.createElement("button")
 
     card.classList.add("discover-card")
+    info.classList.add("info")
     title.textContent = location.name
 
     image.setAttribute("src", location.image)
@@ -23,10 +25,12 @@ locations.forEach(location => {
     button.textContent = "Learn More"
 
     card.appendChild(title)
-    card.appendChild(figure)
-    card.appendChild(address)
-    card.appendChild(description)
+    info.appendChild(figure)
+    info.appendChild(address)
+    info.appendChild(description)
+    card.appendChild(info)
     card.appendChild(button)
 
     cardHolder.appendChild(card)
 });
+

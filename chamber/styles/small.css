@@ -485,18 +485,25 @@ h2 {
     display: grid;
     grid-template-areas:
         "title"
-        "figure"
-        "description"
-        "address"
+        "info"
         "button";
 }
 
-.discover-card p {
+.discover-card .info {
+    display: grid;
+    grid-area: info;
+    grid-template-areas:
+        "figure"
+        "description"
+        "address";
+}
+
+.discover-card .info p {
     margin: .5rem;
     grid-area: description;
 }
 
-.discover-card address {
+.discover-card .info address {
     margin: .5rem;
     grid-area: address;
 }
@@ -506,7 +513,7 @@ h2 {
     grid-area: title;
 }
 
-.discover-card figure {
+.discover-card .info figure {
     grid-area: figure;
 }
 
@@ -565,7 +572,14 @@ footer {
     * {
         font-size: .9rem;
     }
-    h1,h2 {
+
+    h1,
+    h2 {
         font-weight: bold;
+    }
+
+    .discover-card figure{
+        display: block;
+        justify-self: center;
     }
 }
